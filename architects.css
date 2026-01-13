@@ -83,6 +83,28 @@ main{
 .banner-images{
     width:100%;
 }
+/* features section related style*/
+.Features{
+    gap:140px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+    gap:20px
+}
+.feature-card .feature-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1.25rem;
+   
+}
+
 /*some facts related style*/
 .fact-container{
     display: grid;
