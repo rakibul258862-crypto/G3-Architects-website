@@ -83,43 +83,6 @@ main{
 .banner-images{
     width:100%;
 }
-
-
-/* team and feature related style */
-.teams{
-    align-items: center;
-}
-.teams-img-container{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:20px;
-    margin-top: 40px;
-
-}
-.our-features{
-    margin-left: 80px;
-    max-width: 530px;
-}
-
-#Quick-list{
-    font-weight: 500;
-}
-
-/* responsive media query*/
-@media screen and (max-width:576px) {
-    .navbar ,
-    .nav-links ,
-    .teams{
-        flex-direction: column;
-    }
-    .teams-img-container{
-        grid-template-columns: repeat(1,1fr);
-
-    }
-    .our-features{
-        margin-left: 20px;
-    }
-}
 /*some facts related style*/
 .fact-container{
     display: grid;
@@ -149,6 +112,66 @@ main{
 .fact-description{
     max-width: 540px;
 }
+/* sponsor related style*/
+.sponsores-info{
+    max-width: 540px;
+    margin:50px auto;
+    text-align: center;
+}
+.sponsores-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsores-companies img{
+    filter: grayscale(100%);
+}
+
+
+/* team and feature related style */
+.teams{
+    align-items: center;
+}
+.teams-img-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    margin-top: 40px;
+
+}
+.our-features{
+    margin-left: 80px;
+    max-width: 530px;
+}
+
+#Quick-list{
+    font-weight: 500;
+}
+
+/* responsive media query*/
+@media screen and (max-width:576px) {
+    .navbar ,
+    .nav-links ,
+    .teams {
+        flex-direction: column;
+    }
+    .teams-img-container ,
+    .fact-container,
+    .sponsores-companies{
+        grid-template-columns: 1fr;
+    }
+    .fact-container{
+        justify-items: center;
+        gap:24px;
+    }
+    .sponsores-companies{
+        justify-items: center;
+        gap:50px;
+        
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
 
 
 /* medium size device */
@@ -158,5 +181,10 @@ main{
     }
     .our-features{
         margin:50px auto;
+    }
+    .sponsores-companies, .fact-container{
+        grid-template-columns: repeat(2,1fr);
+        gap:50px;
+        justify-items: center;
     }
 }
